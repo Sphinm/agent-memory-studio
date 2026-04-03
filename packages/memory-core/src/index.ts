@@ -1,0 +1,10 @@
+export { createConnection } from "./adapters/sqlite/connection.js";
+export type { SqliteDb } from "./adapters/sqlite/connection.js";
+export { AgentService } from "./services/agent-service.js";
+export { SessionService } from "./services/session-service.js";
+export { MemoryService } from "./services/memory-service.js";
+export { ChatService } from "./services/chat-service.js";
+export type { ChatMessage } from "./services/chat-service.js";
+export { CompactionService, estimateTokens } from "./services/compaction-service.js";
+export type { CompactionResult, CompactionSummary, ExtractedMemory, ContextBudgetResult } from "./services/compaction-service.js";
+export * as schema from "./adapters/sqlite/schema.js";

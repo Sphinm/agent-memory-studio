@@ -1,0 +1,18 @@
+{
+  "name": "agent-memory-studio",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.20.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
+  }
+}
